@@ -1,0 +1,31 @@
+.env
+*.key
+__pycache__/
+venv/
+.venv/
+*.log
+.DS_Store
+
+# --- aggiunto in Jarvis 3.2: dati personali e file creati mentre Jarvis lavora (restano solo sul Mac)
+venv-vecchio/
+_archivio/
+backup/
+dati/
+demo/
+progetti/
+progetti.json
+rubrica.json
+uso.jsonl
+abitudini.json
+briefing_stato.json
+impostazioni.json
+layout.json
+notizie_giorno.json
+notizie_stato.json
+notizie_storico.jsonl
+voli.json
+segreteria/config.py
+segreteria/credentials.json
+segreteria/token_segreteria.json
+_scambio/
+Claude outputs/

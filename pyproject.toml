@@ -1,0 +1,22 @@
+# Configurazione dei controlli automatici: ruff (stile ed errori banali) e pytest (test).
+# Si lanciano dal Terminale dentro ~/jarvis con:  ruff check .   e   python -m pytest
+
+[tool.ruff]
+target-version = "py311"
+line-length = 120
+
+[tool.ruff.lint]
+# E4/E7/E9: errori di sintassi e di stile grave · F: import inutili, nomi non definiti · B: errori comuni
+select = ["E4", "E7", "E9", "F", "B"]
+# E741: nomi come «l» sono usati apposta in tutto il codice, non sono errori
+ignore = ["E741"]
+
+[tool.ruff.lint.per-file-ignores]
+# Zona sacra (vedi zona_sacra.py): questi file si modificano solo con il SÌ e il codice di verifica.
+# I loro avvisi di stile restano qui, segnati, finché non li correggiamo con un aggiornamento approvato.
+"server.py" = ["F401", "B007"]
+"segreteria/agente.py" = ["E401"]
+"segreteria/telegram_bot.py" = ["E401"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

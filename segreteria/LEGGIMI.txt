@@ -1,0 +1,10 @@
+CARTELLA SEGRETERIA DI JARVIS
+
+Questa cartella va dentro ~/jarvis, così:  ~/jarvis/segreteria/
+Segui la guida "Guida Segreteria - Gmail, Drive e Telegram" passo passo.
+
+File da compilare tu:    config.py  (parti da config.esempio.py: cp config.esempio.py config.py)
+File da aggiungere tu:   credentials.json  (scaricato da Google Cloud, Passo 3)
+File creato da solo:     token_segreteria.json  (al primo accesso a Google)
+
+Questi tre file contengono chiavi: non condividerli mai.
